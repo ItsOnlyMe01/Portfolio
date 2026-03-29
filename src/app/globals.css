@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+/* Smooth scroll for navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
+
+/* Utility classes */
+.gradient-text {
+  background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(51, 65, 85, 0.3);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.5);
+}
+
+.btn-primary {
+  @apply px-6 py-2 bg-gradient-to-r from-emerald-accent to-cyan-accent text-dark-bg font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-emerald-accent/50;
+}
+
+.btn-secondary {
+  @apply px-6 py-2 border border-cyan-accent/50 text-cyan-accent rounded-lg transition-all duration-300 hover:bg-cyan-accent/10;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-bold mb-4 gradient-text;
+}
+
+.section-subtitle {
+  @apply text-gray-400 text-lg mb-12;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    @apply text-2xl md:text-3xl;
+  }
+}
