@@ -76,6 +76,10 @@ export function HeroSection() {
             >
               I am a final-year B.Tech CSE student (graduating in 2026) at AKTU with hands-on internship experience at startups like{" "}
               <span className="text-emerald-accent font-semibold">
+                FollowProperty.com
+              </span>
+              ,{" "}
+              <span className="text-emerald-accent font-semibold">
                 HealthSutra.ai
               </span>{" "}
               and{" "}

@@ -16,9 +16,33 @@ interface Experience {
 export function Experience() {
   const experiences: Experience[] = [
     {
+      company: "FollowProperty.com",
+      position: "Full-Stack Developer Intern",
+      period: "15 May 2026 - Present",
+      type: "Startup (Real Estate)",
+      description:
+        "Developed production-ready modules and automation features for a real estate intelligence platform.",
+      responsibilities: [
+        "Developed production-ready modules using Next.js, React.js, TypeScript, Node.js, and MongoDB, including AI-powered news aggregation and lead management systems",
+        "Delivered premium, SEO-optimized landing pages and dynamic project discovery pages using structured schema markup",
+        "Automated large-scale data collection through Python web scraping pipelines with duplicate detection",
+        "Built lead-generation workflows and integrated REST APIs while collaborating directly with the founder to scope and ship features",
+      ],
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "MongoDB",
+        "Python",
+        "Web Scraping",
+        "REST APIs",
+      ],
+    },
+    {
       company: "HealthSutra.ai",
       position: "Full-Stack Developer Intern",
-      period: "Start Date - Current",
+      period: "1 Aug 2025 - 30 Nov 2025",
       type: "Startup (Healthcare)",
       description:
         "Developed full-stack web applications and backend APIs during internship.",
@@ -33,7 +57,7 @@ export function Experience() {
     {
       company: "PrimeVacations.in",
       position: "Backend Developer Intern",
-      period: "Month - Month",
+      period: "21 Mar 2025 - 30 Jun 2025",
       type: "Startup (Travel & Hospitality)",
       description: "Developed backend APIs and deployment setups for a property booking platform.",
       responsibilities: [
@@ -53,7 +77,7 @@ export function Experience() {
     {
       company: "MedWander.com",
       position: "Full-Stack Developer",
-      period: "Month - Month",
+      period: "21 Dec 2024 - 21 Mar 2025",
       type: "Startup (Medical Tourism)",
       description:
         "Developed features for a medical tourism listing platform.",
