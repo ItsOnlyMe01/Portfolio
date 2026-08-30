@@ -103,7 +103,7 @@ export function HeroSection() {
                 View My Work
               </a>
               <a
-                href="https://drive.google.com/file/d/1jHriDJFcIoglw5w7iGz6npPYGIHf_KIT/view?usp=sharing"
+                href="https://drive.google.com/file/d/1HHoGkDUK64FC1WhlJS1IaDSCYZGzt8gs/view?usp=drivesdk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"

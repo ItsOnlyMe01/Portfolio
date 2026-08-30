@@ -56,7 +56,7 @@ export function Navigation() {
               </motion.a>
             ))}
             <motion.a
-              href="https://drive.google.com/file/d/1jHriDJFcIoglw5w7iGz6npPYGIHf_KIT/view?usp=sharing"
+              href="https://drive.google.com/file/d/1HHoGkDUK64FC1WhlJS1IaDSCYZGzt8gs/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary text-sm"
@@ -104,7 +104,7 @@ export function Navigation() {
             ))}
             <div className="px-4 pt-2 space-y-2">
               <a
-                href="https://drive.google.com/file/d/1jHriDJFcIoglw5w7iGz6npPYGIHf_KIT/view?usp=sharing"
+                href="https://drive.google.com/file/d/1HHoGkDUK64FC1WhlJS1IaDSCYZGzt8gs/view?usp=drivesdk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary block text-center text-sm"
