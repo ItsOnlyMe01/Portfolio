@@ -71,7 +71,7 @@ export function Navigation() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Hire Me
+              Let&apos;s Connect
             </motion.a>
           </div>
 
@@ -115,7 +115,7 @@ export function Navigation() {
                 href="mailto:riteshsingh01st@gmail.com"
                 className="btn-primary block text-center text-sm"
               >
-                Hire Me
+                Let&apos;s Connect
               </a>
             </div>
           </motion.div>

@@ -1,7 +1,6 @@
 import {
   Navigation,
   HeroSection,
-  ImpactMetrics,
   ProjectShowcase,
   Experience,
   TechnicalStack,
@@ -15,7 +14,6 @@ export default function Home() {
       <Navigation />
       <main className="overflow-hidden">
         <HeroSection />
-        <ImpactMetrics />
         <ProjectShowcase />
         <Experience />
         <TechnicalStack />

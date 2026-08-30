@@ -142,7 +142,7 @@ export function EducationContact() {
             <div>
               <h2 className="section-title">Get In Touch</h2>
               <p className="section-subtitle">
-                Let&apos;s connect and build something amazing
+                I&apos;m currently open to full-time developer opportunities.
               </p>
             </div>
 
@@ -184,9 +184,7 @@ export function EducationContact() {
                 Open to Opportunities
               </h3>
               <p className="text-gray-300 mb-6">
-                I&apos;m actively looking for full-time opportunities where I
-                can contribute to innovative projects and grow as an engineer.
-                Feel free to reach out with any interesting opportunities!
+                I&apos;m actively looking for full-time developer opportunities. Feel free to reach out to discuss how I can contribute to your team!
               </p>
               <a
                 href="mailto:riteshsingh01st@gmail.com"

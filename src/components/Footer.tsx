@@ -37,8 +37,7 @@ export function Footer() {
           >
             <h3 className="text-2xl font-bold gradient-text">RITESH</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Full-Stack & GenAI Engineer | Building deterministic AI systems
-              and scalable web applications
+              Full-Stack Developer building AI-powered web applications
             </p>
           </motion.div>
 
@@ -103,7 +102,7 @@ export function Footer() {
             <p className="flex items-center gap-2">
               © {currentYear} Ritesh Singh. Made with
               <Heart className="w-4 h-4 text-emerald-accent fill-emerald-accent" />
-              and passion for engineering.
+              in Ghaziabad, India.
             </p>
             <p className="text-xs text-gray-500">
               Designed & Built with Next.js, Tailwind CSS & Framer Motion

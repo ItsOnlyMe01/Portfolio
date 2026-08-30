@@ -66,7 +66,7 @@ export function HeroSection() {
                 RITESH
               </h1>
               <h2 className="text-2xl md:text-3xl text-cyan-accent font-semibold">
-                Full-Stack & GenAI Engineer
+                Full-Stack Developer | AI & GenAI
               </h2>
             </div>
 
@@ -74,8 +74,7 @@ export function HeroSection() {
               variants={itemVariants}
               className="text-gray-300 text-lg leading-relaxed max-w-xl"
             >
-              Final-year B.Tech CSE student (2026) at AKTU with 1+ years of
-              internship experience at startups like{" "}
+              I am a final-year B.Tech CSE student (graduating in 2026) at AKTU with hands-on internship experience at startups like{" "}
               <span className="text-emerald-accent font-semibold">
                 HealthSutra.ai
               </span>{" "}
@@ -83,25 +82,13 @@ export function HeroSection() {
               <span className="text-emerald-accent font-semibold">
                 PrimeVacations.in
               </span>
-              . I specialize in the{" "}
-              <span className="text-cyan-accent font-semibold">MERN stack</span>{" "}
-              and building deterministic AI systems using{" "}
+              . I build web applications using the{" "}
+              <span className="text-cyan-accent font-semibold">MERN/Next.js stack</span>{" "}
+              and implement AI integration using{" "}
               <span className="text-cyan-accent font-semibold">
                 RAG pipelines
               </span>
-              .
-            </motion.p>
-
-            <motion.p
-              variants={itemVariants}
-              className="text-gray-400 text-base leading-relaxed max-w-xl"
-            >
-              I don&apos;t just write code; I solve engineering problems—like
-              reducing data fetch latency by{" "}
-              <span className="text-emerald-accent font-semibold">30%</span> and
-              automating{" "}
-              <span className="text-emerald-accent font-semibold">80%</span> of
-              manual workflows.
+              . I am currently seeking full-time software developer opportunities.
             </motion.p>
 
             <motion.div

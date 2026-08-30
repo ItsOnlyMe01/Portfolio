@@ -24,7 +24,7 @@ export function ProjectShowcase() {
     {
       title: "DailyTrack AI",
       description:
-        "Personal GenAI Assistant with deterministic routing to eliminate hallucinations",
+        "AI assistant that queries user-provided documents to answer questions with context-aware responses.",
       technologies: [
         "Node.js",
         "PostgreSQL",
@@ -33,9 +33,9 @@ export function ProjectShowcase() {
         "LLM Orchestration",
       ],
       highlights: [
-        "Deterministic routing layer for structured data",
-        "Zero hallucination in RAG responses",
-        "Multi-source knowledge integration",
+        "Implemented Retrieval-Augmented Generation (RAG) using ChromaDB and LLM APIs for document query answering",
+        "Built semantic search and text chunking pipeline to retrieve relevant context before prompt submission",
+        "Developed backend orchestration using Node.js and PostgreSQL to manage user documents and chat sessions",
       ],
       liveLink: "https://dailytrack-ai.com",
       demoLink: "https://www.youtube.com/embed/dailytrack-demo",
@@ -44,12 +44,12 @@ export function ProjectShowcase() {
     {
       title: "ChitChat",
       description:
-        "Real-time multilingual chat application with live translation",
+        "Real-time chat application featuring live translation using third-party translation APIs.",
       technologies: ["React.js", "Socket.io", "Node.js", "WebSocket"],
       highlights: [
-        "Real-time message synchronization",
-        "Live translation across 50+ languages",
-        "Responsive UI for mobile & desktop",
+        "Developed real-time message broadcasting using Socket.io and WebSockets",
+        "Integrated machine translation services to translate incoming chat messages dynamically",
+        "Designed responsive frontend with React.js for seamless desktop and mobile messaging",
       ],
       liveLink: "https://chitchat-app.com",
       demoLink: "https://www.youtube.com/embed/chitchat-demo",
@@ -58,12 +58,12 @@ export function ProjectShowcase() {
     {
       title: "WanderLust",
       description:
-        "Full-stack property listing platform with CRUD operations and dynamic ratings",
+        "Full-stack property rental application that lets users browse, create, and review vacation listings.",
       technologies: ["MERN Stack", "MongoDB", "Express", "React", "Node.js"],
       highlights: [
-        "Complete CRUD operations for listings",
-        "Dynamic rating & review system",
-        "Advanced search & filtering",
+        "Developed RESTful APIs in Node.js and Express with CRUD operations for listing management",
+        "Implemented secure user authentication and database models with MongoDB",
+        "Designed a dynamic ratings and reviews module to enable user feedback on listings",
       ],
       liveLink: "https://wanderlust-properties.com",
       demoLink: "https://www.youtube.com/embed/wanderlust-demo",
@@ -106,7 +106,7 @@ export function ProjectShowcase() {
         >
           <h2 className="section-title">Featured Projects</h2>
           <p className="section-subtitle">
-            Showcasing my technical expertise and problem-solving abilities
+            Selected projects I&apos;ve built using modern full-stack and AI technologies.
           </p>
         </motion.div>
 

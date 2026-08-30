@@ -21,12 +21,12 @@ export function Experience() {
       period: "Start Date - Current",
       type: "Startup (Healthcare)",
       description:
-        "Contributing to the development of an AI-powered health platform",
+        "Developed full-stack web applications and backend APIs during internship.",
       responsibilities: [
-        "Optimized data fetch latency by 30% through indexing and caching strategies",
-        "Developed REST APIs for patient data management using Node.js",
-        "Implemented real-time notifications using WebSocket",
-        "Collaborated with 5+ team members in an Agile environment",
+        "Built and optimized REST APIs for patient data management using Node.js and MongoDB",
+        "Integrated real-time updates using WebSockets to synchronize patient status updates across client dashboards",
+        "Implemented database query indexing to improve search response times",
+        "Collaborated with team members in an Agile development environment to deliver weekly sprints",
       ],
       technologies: ["Node.js", "Express", "MongoDB", "React", "AWS", "Docker"],
     },
@@ -35,12 +35,11 @@ export function Experience() {
       position: "Backend Developer Intern",
       period: "Month - Month",
       type: "Startup (Travel & Hospitality)",
-      description: "Engineered backend systems for a property booking platform",
+      description: "Developed backend APIs and deployment setups for a property booking platform.",
       responsibilities: [
-        "Automated 80% of manual workflows using Python FastAPI",
-        "Designed and implemented microservices architecture",
-        "Reduced server response time from 2s to 200ms",
-        "Deployed applications on AWS EC2 with Nginx load balancing",
+        "Built backend routing and automated notification scripts using Python and FastAPI",
+        "Designed relational database tables and optimized queries in PostgreSQL",
+        "Deployed application builds on AWS EC2 servers using Docker Compose and Nginx for routing",
       ],
       technologies: [
         "FastAPI",
@@ -57,12 +56,12 @@ export function Experience() {
       period: "Month - Month",
       type: "Startup (Medical Tourism)",
       description:
-        "Developed full-stack solutions for a medical tourism platform",
+        "Developed features for a medical tourism listing platform.",
       responsibilities: [
-        "Built responsive UI using Next.js with Server-Side Rendering",
-        "Implemented secure authentication and authorization",
-        "Created dynamic dashboard for healthcare providers",
-        "Optimized performance achieving 95+ Lighthouse score",
+        "Built interactive search and filter interfaces using Next.js with Server-Side Rendering",
+        "Implemented secure user authentication and session management using JWT-based auth",
+        "Developed dynamic dashboard layouts using Tailwind CSS for healthcare providers",
+        "Optimized frontend assets and build size to improve Lighthouse performance scores",
       ],
       technologies: [
         "Next.js",
