@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   ExternalLink,
   PlayCircle,
@@ -17,6 +18,7 @@ interface Project {
   liveLink: string;
   demoLink: string;
   icon: React.ReactNode;
+  image?: string;
 }
 
 export function ProjectShowcase() {
@@ -37,9 +39,10 @@ export function ProjectShowcase() {
         "Built semantic search and text chunking pipeline to retrieve relevant context before prompt submission",
         "Developed backend orchestration using Node.js and PostgreSQL to manage user documents and chat sessions",
       ],
-      liveLink: "https://dailytrack-ai.com",
+      liveLink: "http://dailytrackai.duckdns.org/",
       demoLink: "https://www.youtube.com/embed/dailytrack-demo",
       icon: <Database className="w-6 h-6" />,
+      image: "/dailytrack.png",
     },
     {
       title: "ChitChat",
@@ -51,9 +54,10 @@ export function ProjectShowcase() {
         "Integrated machine translation services to translate incoming chat messages dynamically",
         "Designed responsive frontend with React.js for seamless desktop and mobile messaging",
       ],
-      liveLink: "https://chitchat-app.com",
+      liveLink: "https://chitchat-live.duckdns.org/",
       demoLink: "https://www.youtube.com/embed/chitchat-demo",
       icon: <MessageSquare className="w-6 h-6" />,
+      image: "/ChitChat.png",
     },
     {
       title: "WanderLust",
@@ -68,6 +72,7 @@ export function ProjectShowcase() {
       liveLink: "https://wanderlust-properties.com",
       demoLink: "https://www.youtube.com/embed/wanderlust-demo",
       icon: <MapPin className="w-6 h-6" />,
+      image: "",
     },
   ];
 
@@ -123,6 +128,40 @@ export function ProjectShowcase() {
               variants={cardVariants}
               className="glass-effect rounded-xl border border-dark-border overflow-hidden hover:border-cyan-accent/50 card-hover group flex flex-col"
             >
+              {/* Clickable Image Thumbnail */}
+              <a 
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block h-52 md:h-60 overflow-hidden border-b border-dark-border bg-dark-bg/30"
+              >
+                {project.image ? (
+                  <div className="relative w-full h-full group-hover:scale-105 transition-transform duration-500">
+                    <Image
+                      src={project.image}
+                      alt={`${project.title} Preview`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-w-768px) 100vw, 50vw"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-emerald-accent/20 to-cyan-accent/20 flex flex-col items-center justify-center text-cyan-accent p-6 text-center">
+                    <div className="p-4 rounded-full bg-cyan-accent/10 mb-3 text-cyan-accent">
+                      {project.icon}
+                    </div>
+                    <span className="text-lg font-semibold tracking-wide">{project.title}</span>
+                    <span className="text-xs text-gray-400 mt-1">Interactive Web Application</span>
+                  </div>
+                )}
+                {/* Overlay on hover */}
+                <div className="absolute inset-0 bg-dark-bg/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <div className="px-4 py-2 rounded-lg bg-emerald-accent text-dark-bg font-bold text-sm shadow-lg flex items-center gap-2">
+                    Visit Live Site →
+                  </div>
+                </div>
+              </a>
+
               {/* Header */}
               <div className="p-6 border-b border-dark-border bg-gradient-to-r from-emerald-accent/10 to-cyan-accent/10">
                 <div className="flex items-start justify-between mb-4">

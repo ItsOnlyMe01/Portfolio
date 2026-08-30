@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Briefcase, Calendar } from "lucide-react";
+import Image from "next/image";
 
 interface Experience {
   company: string;
@@ -11,6 +12,8 @@ interface Experience {
   description: string;
   responsibilities: string[];
   technologies: string[];
+  image?: string;
+  link?: string;
 }
 
 export function Experience() {
@@ -38,6 +41,8 @@ export function Experience() {
         "Web Scraping",
         "REST APIs",
       ],
+      image: "/FollowProperty.png",
+      link: "https://www.followproperty.com/",
     },
     {
       company: "HealthSutra.ai",
@@ -53,6 +58,8 @@ export function Experience() {
         "Collaborated with team members in an Agile development environment to deliver weekly sprints",
       ],
       technologies: ["Node.js", "Express", "MongoDB", "React", "AWS", "Docker"],
+      image: "/Healthsutra.png",
+      link: "https://www.healthsutra.ai/",
     },
     {
       company: "PrimeVacations.in",
@@ -73,6 +80,8 @@ export function Experience() {
         "Nginx",
         "Docker Compose",
       ],
+      image: "/primevactions.png",
+      link: "https://www.primevacations.in/",
     },
     {
       company: "MedWander.com",
@@ -95,6 +104,8 @@ export function Experience() {
         "Prisma",
         "AWS",
       ],
+      image: "",
+      link: "https://www.medwander.com",
     },
   ];
 
@@ -152,18 +163,57 @@ export function Experience() {
 
               {/* Content */}
               <div className="ml-8 md:ml-16 glass-effect p-6 rounded-xl border border-dark-border hover:border-emerald-accent/50 card-hover">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Briefcase className="w-5 h-5 text-emerald-accent" />
-                      <h3 className="text-2xl font-bold text-white">
-                        {exp.company}
-                      </h3>
+                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex items-start gap-4">
+                    {/* Clickable Company Logo/Thumbnail */}
+                    {exp.link ? (
+                      <a
+                        href={exp.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative block w-14 h-14 rounded-lg overflow-hidden border border-dark-border bg-dark-bg/50 flex-shrink-0 group/logo hover:border-emerald-accent/50 transition-colors"
+                      >
+                        {exp.image ? (
+                          <Image
+                            src={exp.image}
+                            alt={`${exp.company} Logo`}
+                            fill
+                            className="object-contain p-1 group-hover/logo:scale-105 transition-transform duration-300"
+                          />
+                        ) : (
+                          <div className="w-full h-full bg-gradient-to-br from-emerald-accent/20 to-cyan-accent/20 flex items-center justify-center text-cyan-accent font-bold text-lg">
+                            {exp.company[0]}
+                          </div>
+                        )}
+                      </a>
+                    ) : (
+                      <div className="relative w-14 h-14 rounded-lg overflow-hidden border border-dark-border bg-dark-bg/50 flex items-center justify-center text-cyan-accent text-lg font-bold flex-shrink-0">
+                        {exp.company[0]}
+                      </div>
+                    )}
+
+                    <div>
+                      <div className="flex items-center gap-2 mb-1">
+                        <h3 className="text-2xl font-bold text-white leading-tight">
+                          {exp.link ? (
+                            <a
+                              href={exp.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:text-emerald-accent transition-colors"
+                            >
+                              {exp.company}
+                            </a>
+                          ) : (
+                            exp.company
+                          )}
+                        </h3>
+                      </div>
+                      <p className="text-lg text-emerald-accent font-semibold">
+                        {exp.position}
+                      </p>
+                      <p className="text-cyan-accent/80 text-sm">{exp.type}</p>
                     </div>
-                    <p className="text-lg text-emerald-accent font-semibold">
-                      {exp.position}
-                    </p>
-                    <p className="text-cyan-accent/80 text-sm">{exp.type}</p>
                   </div>
                   <div className="flex items-center gap-2 mt-4 md:mt-0 text-gray-400">
                     <Calendar className="w-4 h-4" />
