@@ -52,7 +52,7 @@ export function ProjectShowcase() {
     },
     {
       title: "HealthSutra.ai",
-      label: "Professional Project · Team Project",
+      label: "Professional Project · Team Contribution",
       description:
         "Healthcare platform where I collaborated as part of an Agile engineering team to build secure backend APIs and real-time dashboard updates.",
       technologies: [
@@ -75,7 +75,7 @@ export function ProjectShowcase() {
     },
     {
       title: "PrimeVacations.in",
-      label: "Professional Project · Team Project",
+      label: "Professional Project · Team Contribution",
       description:
         "Property booking platform where I contributed as part of the backend team, developing reservation routing, automated notifications, and cloud deployment setups.",
       technologies: [
@@ -97,7 +97,7 @@ export function ProjectShowcase() {
     },
     {
       title: "DailyTrack AI",
-      label: "Personal Project · Solo Developer",
+      label: "Personal Project · Sole Developer",
       description:
         "AI assistant that queries user-provided documents to answer questions with context-aware responses.",
       technologies: [
@@ -119,7 +119,7 @@ export function ProjectShowcase() {
     },
     {
       title: "ChitChat",
-      label: "Personal Project · Solo Developer",
+      label: "Personal Project · Sole Developer",
       description:
         "Real-time chat application featuring live translation using third-party translation APIs.",
       technologies: ["React.js", "Socket.io", "Node.js", "WebSocket"],
