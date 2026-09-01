@@ -30,7 +30,6 @@ export function TechnicalStack() {
         "RAG Pipelines",
         "LLM Orchestration",
         "Groq LLM",
-        "Ollama",
         "ChromaDB",
         "Vector Embeddings",
       ],
@@ -46,7 +45,6 @@ export function TechnicalStack() {
         "Node.js",
         "PostgreSQL",
         "MongoDB",
-        "Prisma",
         "TypeScript",
       ],
     },
@@ -65,7 +63,7 @@ export function TechnicalStack() {
       ],
     },
     {
-      category: "Databases & ORM",
+      category: "Databases",
       icon: <Database className="w-6 h-6" />,
       color:
         "from-cyan-accent/10 border-cyan-accent/30 hover:border-cyan-accent/60",
@@ -73,8 +71,6 @@ export function TechnicalStack() {
         "PostgreSQL",
         "MongoDB",
         "Redis",
-        "Prisma ORM",
-        "Raw SQL",
         "Database Indexing",
       ],
     },
@@ -102,7 +98,6 @@ export function TechnicalStack() {
         "FastAPI",
         "Socket.io",
         "REST APIs",
-        "GraphQL",
       ],
     },
   ];
