@@ -30,7 +30,6 @@ export function ProjectShowcase() {
   useEffect(() => {
     // Silently warm up Render-hosted projects in the background when a visitor lands
     const renderUrls = [
-      "http://dailytrackai.duckdns.org/",
       "https://chitchat-live.duckdns.org/",
       "https://www.wanderlust-live.duckdns.org/",
     ];
