@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
@@ -26,6 +27,29 @@ interface Project {
 }
 
 export function ProjectShowcase() {
+  useEffect(() => {
+    // Silently warm up Render-hosted projects in the background when a visitor lands
+    const renderUrls = [
+      "http://dailytrackai.duckdns.org/",
+      "https://chitchat-live.duckdns.org/",
+      "https://www.wanderlust-live.duckdns.org/",
+    ];
+
+    renderUrls.forEach((url) => {
+      try {
+        fetch(url, {
+          mode: "no-cors",
+          cache: "no-cache",
+        }).catch(() => {
+          // Network errors or opaque CORS responses are ignored safely;
+          // the HTTP request reaches Render's servers to wake the sleeping container immediately.
+        });
+      } catch {
+        // Safe fallback
+      }
+    });
+  }, []);
+
   const projects: Project[] = [
     {
       title: "FollowProperty.com",
