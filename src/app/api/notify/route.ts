@@ -36,14 +36,20 @@ export async function POST(req: NextRequest) {
       .join(", ") || "Unknown Location";
 
     // Format visitor source
-    let source = ref || "Direct Visit";
+    let source = "Direct Visit";
     if (ref && ref !== "Direct") {
       source = `${ref.toUpperCase()} (Tagged Link)`;
-    } else if (referrer) {
-      if (referrer.includes("naukri")) source = "Naukri";
-      else if (referrer.includes("linkedin")) source = "LinkedIn";
-      else if (referrer.includes("github")) source = "GitHub";
-      else if (referrer.includes("google")) source = "Google Search";
+    } else if (referrer && referrer !== "Direct") {
+      const lowerRef = referrer.toLowerCase();
+      if (lowerRef.includes("naukri")) source = "Naukri";
+      else if (lowerRef.includes("linkedin") || lowerRef.includes("lnkd.in")) source = "LinkedIn";
+      else if (lowerRef.includes("github")) source = "GitHub";
+      else if (lowerRef.includes("google")) source = "Google Search";
+      else if (lowerRef.includes("whatsapp")) source = "WhatsApp";
+      else if (lowerRef.includes("indeed")) source = "Indeed";
+      else if (lowerRef.includes("wellfound") || lowerRef.includes("angel.co")) source = "Wellfound / AngelList";
+      else if (lowerRef.includes("instagram")) source = "Instagram";
+      else if (lowerRef.includes("t.co") || lowerRef.includes("twitter") || lowerRef.includes("x.com")) source = "X (Twitter)";
       else source = referrer;
     }
 
