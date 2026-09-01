@@ -5,3 +5,5 @@ export { ProjectShowcase } from "./ProjectShowcase";
 export { Experience } from "./Experience";
 export { TechnicalStack } from "./TechnicalStack";
 export { EducationContact } from "./EducationContact";
+export { VisitorTracker } from "./VisitorTracker";
+
