@@ -10,6 +10,7 @@ import {
   Building2,
   Activity,
   Compass,
+  MapPin,
 } from "lucide-react";
 
 interface Project {
@@ -132,6 +133,30 @@ export function ProjectShowcase() {
       demoLink: "https://www.youtube.com/embed/chitchat-demo",
       icon: <MessageSquare className="w-6 h-6" />,
       image: "/ChitChat.png",
+    },
+    {
+      title: "WanderLust",
+      label: "Personal Project · Sole Developer",
+      description:
+        "Full-stack vacation rental platform that lets users browse, list, and review travel destinations with secure authentication and image management.",
+      technologies: [
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Cloudinary",
+        "JWT",
+        "bcrypt",
+      ],
+      highlights: [
+        "Built full-stack vacation rental application with user authentication using JWT and bcrypt password hashing",
+        "Integrated Cloudinary API for cloud-based media storage and dynamic listing image uploads",
+        "Developed RESTful backend with Express and Node.js implementing CRUD operations for listings and reviews",
+        "Designed responsive frontend using Vanilla JavaScript, HTML, and CSS for listing discovery and reviews",
+      ],
+      liveLink: "https://www.wanderlust-live.duckdns.org/",
+      icon: <MapPin className="w-6 h-6" />,
+      image: "/wanderlust.png",
     },
   ];
 
