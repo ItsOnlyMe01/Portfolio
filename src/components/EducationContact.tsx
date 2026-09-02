@@ -50,7 +50,7 @@ export function EducationContact() {
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      value: "github.com/ritesh-singh",
+      value: "github.com/ItsOnlyMe01",
       href: "https://github.com/ItsOnlyMe01",
       color: "hover:text-emerald-accent",
     },

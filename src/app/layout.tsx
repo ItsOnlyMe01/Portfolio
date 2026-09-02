@@ -10,22 +10,22 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
       : `https://${process.env.NEXT_PUBLIC_SITE_URL}`)
   : process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
-  : "https://ritesh-portfolio.vercel.app";
+  : "https://portfolio-ritesh.duckdns.org";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Ritesh Singh | Full-Stack & GenAI Engineer",
-    template: "%s | Ritesh Singh",
+    default: "Ritesh | Full-Stack & GenAI Developer",
+    template: "%s | Ritesh",
   },
   description:
-    "Portfolio of Ritesh Singh — Full-Stack Developer & GenAI Engineer specializing in Next.js, MERN Stack, and RAG Pipelines. Explore featured projects, experience, and contact information.",
-  applicationName: "Ritesh Singh Portfolio",
+    "Portfolio of Ritesh — Full-Stack & GenAI Developer specializing in Next.js, MERN Stack, and RAG Pipelines. Explore featured projects, experience, and contact information.",
+  applicationName: "Ritesh Portfolio",
   keywords: [
-    "Ritesh Singh",
+    "Ritesh",
     "Portfolio",
     "Full-Stack Developer",
-    "GenAI Engineer",
+    "GenAI Developer",
     "Next.js",
     "React",
     "TypeScript",
@@ -33,34 +33,42 @@ export const metadata: Metadata = {
     "MERN Stack",
     "RAG Pipelines",
     "LangChain",
-    "Software Engineer",
+    "Software Developer",
   ],
-  authors: [{ name: "Ritesh Singh", url: "https://github.com/ItsOnlyMe01" }],
-  creator: "Ritesh Singh",
-  publisher: "Ritesh Singh",
+  authors: [{ name: "Ritesh", url: "https://github.com/ItsOnlyMe01" }],
+  creator: "Ritesh",
+  publisher: "Ritesh",
   openGraph: {
-    title: "Ritesh Singh | Full-Stack & GenAI Engineer",
+    title: "Ritesh | Full-Stack & GenAI Developer",
     description:
-      "Full-Stack Developer & GenAI Engineer specializing in Next.js, MERN Stack, and RAG Pipelines. Explore featured projects, experience, and contact information.",
+      "Full-Stack & GenAI Developer specializing in Next.js, MERN Stack, and RAG Pipelines. Explore featured projects, experience, and contact information.",
     url: siteUrl,
-    siteName: "Ritesh Singh Portfolio",
+    siteName: "Ritesh Portfolio",
     locale: "en_US",
     type: "website",
     images: [
       {
+        url: "/og-image.jpg",
+        width: 600,
+        height: 663,
+        alt: "Ritesh - Full-Stack & GenAI Developer",
+        type: "image/jpeg",
+      },
+      {
         url: "/my-image.png",
         width: 754,
         height: 833,
-        alt: "Ritesh Singh - Full-Stack & GenAI Engineer",
+        alt: "Ritesh - Full-Stack & GenAI Developer",
+        type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ritesh Singh | Full-Stack & GenAI Engineer",
+    title: "Ritesh | Full-Stack & GenAI Developer",
     description:
-      "Full-Stack Developer & GenAI Engineer specializing in Next.js, MERN Stack, and RAG Pipelines.",
-    images: ["/my-image.png"],
+      "Full-Stack & GenAI Developer specializing in Next.js, MERN Stack, and RAG Pipelines.",
+    images: ["/og-image.jpg"],
     creator: "@ItsOnlyMe01",
   },
   robots: {

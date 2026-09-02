@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Github } from "lucide-react";
 
 export function HeroSection() {
   const containerVariants = {
@@ -109,6 +110,15 @@ export function HeroSection() {
                 className="btn-secondary"
               >
                 View Resume
+              </a>
+              <a
+                href="https://github.com/ItsOnlyMe01"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary flex items-center gap-2"
+              >
+                <Github className="w-4 h-4" />
+                GitHub
               </a>
               <a href="#contact" className="btn-secondary">
                 Get in Touch

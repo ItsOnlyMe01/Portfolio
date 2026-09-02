@@ -100,7 +100,7 @@ export function Footer() {
         <div className="border-t border-dark-border py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
             <p className="flex items-center gap-2">
-              © {currentYear} Ritesh Singh. Made with
+              © {currentYear} Ritesh. Made with
               <Heart className="w-4 h-4 text-emerald-accent fill-emerald-accent" />
               in Ghaziabad, India.
             </p>
