@@ -4,31 +4,80 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+  ? (process.env.NEXT_PUBLIC_SITE_URL.startsWith("http")
+      ? process.env.NEXT_PUBLIC_SITE_URL
+      : `https://${process.env.NEXT_PUBLIC_SITE_URL}`)
+  : process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : "https://ritesh-portfolio.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Ritesh - Full-Stack & GenAI Engineer",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Ritesh Singh | Full-Stack & GenAI Engineer",
+    template: "%s | Ritesh Singh",
+  },
   description:
-    "Professional Portfolio of Ritesh Singh - Full-Stack & GenAI Engineer specializing in MERN Stack and RAG Pipelines",
-  keywords: ["portfolio", "engineer", "mern", "genai", "rag", "full-stack"],
-  authors: [{ name: "Ritesh Singh" }],
+    "Portfolio of Ritesh Singh — Full-Stack Developer & GenAI Engineer specializing in Next.js, MERN Stack, and RAG Pipelines. Explore featured projects, experience, and contact information.",
+  applicationName: "Ritesh Singh Portfolio",
+  keywords: [
+    "Ritesh Singh",
+    "Portfolio",
+    "Full-Stack Developer",
+    "GenAI Engineer",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "MERN Stack",
+    "RAG Pipelines",
+    "LangChain",
+    "Software Engineer",
+  ],
+  authors: [{ name: "Ritesh Singh", url: "https://github.com/ItsOnlyMe01" }],
   creator: "Ritesh Singh",
+  publisher: "Ritesh Singh",
   openGraph: {
-    title: "Ritesh - Full-Stack & GenAI Engineer",
-    description: "Professional Portfolio",
-    url: "https://ritesh-portfolio.com",
+    title: "Ritesh Singh | Full-Stack & GenAI Engineer",
+    description:
+      "Full-Stack Developer & GenAI Engineer specializing in Next.js, MERN Stack, and RAG Pipelines. Explore featured projects, experience, and contact information.",
+    url: siteUrl,
+    siteName: "Ritesh Singh Portfolio",
+    locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
+        url: "/my-image.png",
+        width: 754,
+        height: 833,
+        alt: "Ritesh Singh - Full-Stack & GenAI Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ritesh - Full-Stack & GenAI Engineer",
-    description: "Professional Portfolio",
-    images: ["/og-image.jpg"],
+    title: "Ritesh Singh | Full-Stack & GenAI Engineer",
+    description:
+      "Full-Stack Developer & GenAI Engineer specializing in Next.js, MERN Stack, and RAG Pipelines.",
+    images: ["/my-image.png"],
+    creator: "@ItsOnlyMe01",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/my-image.png",
+    shortcut: "/my-image.png",
+    apple: "/my-image.png",
   },
 };
 
